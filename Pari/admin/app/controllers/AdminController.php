@@ -161,7 +161,7 @@ class AdminController extends ControllerBase
     {
         $this->session->remove('authAdmin');
         $this->flash->success('Goodbye!');
-        return $this->forward('home/index');
+        return $this->response->redirect('index/index');
     }
 
     public function GetUser()

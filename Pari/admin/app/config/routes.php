@@ -7,8 +7,14 @@ $router = new Phalcon\Mvc\Router();
 $router->removeExtraSlashes(false);
 
 $router->add('/', [
-    'controller' => 'admin',
+    'controller' => 'home',
     'action'     => 'index'
+]);
+
+// Not Found Paths
+$router->notFound([
+    'controller' => 'index',
+    'action' => 'show404'
 ]);
 
 return $router;

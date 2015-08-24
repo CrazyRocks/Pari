@@ -23,6 +23,7 @@ use Phalcon\Mvc\View;
  * @property \Phalcon\Escaper                    $escaper
  * @property \Pari\Services                    $service
  * @property \Redis                              $redis
+ * @property \Redis                              $session
  */
 class ControllerBase extends Controller
 {
@@ -154,6 +155,7 @@ class ControllerBase extends Controller
 
         $this->response->redirect($url);
     }
+
 
 
 }
