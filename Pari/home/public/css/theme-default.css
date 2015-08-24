@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+/*@import url("bootstrap.min.css");*/
+.page a{
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+}
+.page a.cur,.page a.cur:hover{
+    background: #4b0000;
+    border: 1px solid #4b0000;
+    color: #fff;
+}
+.page a:hover{
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.ads-contuiter{
+    background: #f3f3f3;
+}
+
+#main .nav-stock{
+    background: #fff;
+    box-shadow: 0 0 3px #ccc;
+}
+#main .home-main{
+    background: #fff;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.cm-icon{
+    background: url("../images/mc-icon.png") no-repeat;
+    color: #fff;
+}
+
+.cm-icon.cm-a{
+    background-position: -106px 0;
+}
+.cm-icon.cm-b{
+    background-position: -73px 0;
+}
+.cm-icon.cm-c{
+    background-position: -38px 0;
+}
+.cm-icon.cm-d{
+    background-position: 0px 0;
+}
+
+
+
+
+
+#header{
+   border-top: 8px solid #4b0000;
+    /*background: rgba(255,255,255,0.25);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.25);
+    border-bottom: 1px solid rgba(255,255,255,.35);*/
+}
+.green{
+     color: #489800;
+}
+.red{
+     color: #c00;
+}
+
+
+#header.inner-main-header{
+    border-top: 8px solid #4b0000;
+    background: #fff;
+}
+#header.inner-main-header.v-m{
+    border-top: 8px solid #5F0000;
+    background: #fff;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+
+.logo p{
+     color: #fff;
+}
+.inner-main-header .logo p{color: #999;}
+
+
+.logo p.websit-name{
+    color: #a2a2a2; font-size: 12px;
+}
+
+#header .comemt-toTips{
+    background: #4b0000;
+    color: #fff;
+}
+
+#header .comemt-toTips a{
+    background: #4b0000;
+    color: #fff;
+}
+
+#header .comemt-toTips a span{
+    color: #fff;
+}
+.login-contruter{
+    background: rgba(0,0,0,.05);
+}
+.input-box .t_menu{
+    background: rgba(33,10,41,.15);
+    border-radius: 4px 4px 0 0;
+}
+.input-box .t_menu .li a{
+    background: #E7E5E9; color: #230b31;
+}
+.input-box .t_menu .li a.atice{
+    background: #fff;
+   /* background: #230b31; */color: #230b31;
+  /*  background: #fff;*/
+}
+.input-box .t_menu .li:first-child a.atice{
+    border-radius: 4px 0 0 0;
+}
+.input-box .t_menu .li:last-child a.atice{
+    border-radius: 0 4px 0 0;
+}
+
+
+.input-box .inpput-group{
+    color: #666;
+}
+.input-box label{
+    color: #666;
+}
+
+
+.login-contruter .btn-control .btn{
+     background: #210a2f;border: 1px solid #2f143f;
+}
+
+
+
+.login-contruter .input-box{
+     background: #fff; border: 1px solid #5d3c71;
+    /*box-shadow:0px 0px 20px rgba(23,5,33,.7);*/
+    box-shadow:0px 0px 20px rgba(23,5,33,.7);
+    /*box-shadow:0px 0px 20px rgba(161,0,255,.3);*/
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.login-contruter .input-box .form-control{
+    border: 1px solid #bfb5c6;
+}
+
+
+.menu-maneger{
+    background: #570202;
+}
+
+.menu-maneger ul li.cur a,.menu-maneger ul li a:hover{
+    background: #460202;
+}
+
+
+.ac-main .nav-stock ul{
+    border: 1px solid #ccc;
+    border-top:0;
+}
+
+.ac-main .nav-stock h1{
+    border: 1px solid #2F143F;
+    background: #2F143F;
+    color: #fff;
+}
+
+.ac-main .nav-stock h2{
+    /*background: #e9e6e6;*/
+    border: 1px solid #ccc;
+    color: #333;
+    border-top:0;
+    background: #ffefef;
+}
+
+
+.ac-main .nav-stock ul li.cur a,.ac-main .nav-stock ul li a:hover{
+    background: #2F143F;
+    color: #fff;
+    /*border-left: 3px solid #e4e4e4*/;
+}
+
+.ac-main .container-main .home-main{
+    border: 1px solid #ccc;
+}
+
+.tool-title-main{
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.ac-main .user-info{
+    border-bottom: 1px solid #e4e4e4;
+}
+
+
+.vc-main .nav-stock ul{
+    border: 1px solid #ccc;
+    border-top:0;
+}
+
+.vc-main .nav-stock h1{
+    border: 1px solid #dedede;
+    background: #f3f3f3;
+    color: #333;
+}
+
+.vc-main .nav-stock h2{
+    /*background: #e9e6e6;*/
+    border: 1px solid #ccc;
+    color: #333;
+    border-top:0;
+    background: #f1f1ff;
+}
+
+
+.vc-main .nav-stock ul li.cur a,.vc-main .nav-stock ul li a:hover{
+    background: #511f0a;
+    color: #fff;
+    /*border-left: 3px solid #e4e4e4*/;
+}
+
+.vc-main .container-main .home-main{
+    border: 1px solid #ccc;
+}
+
+.vc-main .updata-password .fixBox .btn{
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+
+.vc-main .user-info{
+    border-bottom: 1px solid #e4e4e4;
+}
+
+
+
+
+
+
+
+#main .user-info .in-info p b{color: #f60;}
+#main .user-info .in-info p a{
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+}
+#main .user-info .in-info p a:hover{
+    background: #0091ed; color: #fff;
+    border: 1px solid #0091ed;
+}
+#main .user-info .orther a{
+    color: #0091ed;
+}
+
+.tool-list-pic1{
+    border-bottom: 1px solid #e4e4e4;
+}
+.tool-title-main a.cur{ color: #1a90bc;}
+
+.fixBox .inpput-group input{
+    border: 1px solid #cecece;
+}
+
+.findedPassword .sucess{
+    background: url("../images/sucess_icon.png") left 74px  no-repeat;
+}
+
+.findedPassword .sucess h5{
+    color: #5d8802;
+}
+
+.findedPassword .sucess a{
+    color: #005885;
+}
+
+.tool-tips-comment{
+    background: #ffffd5;
+    border: 1px solid #ddca92;
+
+}
+
+.tool-tips-comment.danger{
+    background: #E2C7C6;
+    border: 1px solid #bda6a6;
+    color: #9A3636;
+}
+.tool-tips-comment.sucess{
+    background: #E6EDD4;
+    border: 1px solid #c4cab4;
+    color: #267100;
+}
+
+.tool-tips-comment.waring{
+    background: #D5ECF4;
+    border: 1px solid #bed5ff;
+    color: #50B2D9;
+}
+
+
+
+
+.or-select .fixBox .u-o-item{
+    border-bottom: 1px dashed #ccc;
+}
+.or-select .fixBox:last-child .u-o-item{border-bottom:0;}
+.g_main .o-list .g-o-box{
+    border: 1px solid #ccc;
+}
+.or-select .fixBox .u-o-item ul li.cur a,.or-select .fixBox .u-o-item ul li a:hover{
+    background: #460202;
+    color: #fff;
+}
+
+.tool-tab-select{
+    border: 1px solid #ccc;
+}
+.tool-tab-select ul li a{
+    border-right: 1px solid #ccc;
+}
+.tool-tab-select ul li.cur a{
+    border-bottom: 2px solid #460202;
+    color:#460202 ;
+}
+
+.g-o-listbox .g-i-each{
+ border-bottom: 1px solid #ccc;
+}
+
+
+
+.g-adv-main .g-adv-box{
+    border: 1px solid #ccc;
+}
+.g-adv-main .item-g-intro .item{
+    background: #ebebeb;
+}
+
+
+.creat-g-v .fixBox .inpput-group b{
+    color: #c00;
+}
+
+.vc-main .creat-g-v .fixBox .btn{
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.container-main table{
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.container-main table tr th,.container-main table tr td{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.danger{
+    color: #c00;
+}
+.sucess{
+    color: #390;
+}
+.loss{
+    color: #999;
+}
+table tr td .o-do{
+    color: #06f;
+}
+table tr td .o-do a,table tr td .o-do a:hover{
+    color: #06f;
+}
+
+.tool-s-btn .btn{
+    background: #679A11;
+    border: 1px solid #547e0e;
+    color: #fff;
+}
+
+.canel.btn{
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    background: #c0c0c0; border-top: 1px solid #fff;
+    /*box-shadow: -2px -2px 2px rgba(0,0,0,.5);*/
+}

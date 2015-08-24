@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="common/tests/TestHelper.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         verbose="true"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="true">
+    <testsuites>
+        <testsuite name="Service - Testsuite">
+            <directory>Pari/tests</directory>
+        </testsuite>
+        <testsuite name="Sso - Testsuite">
+            <directory>sso/tests</directory>
+        </testsuite>
+        <testsuite name="Mobile - Testsuite">
+            <directory>mobile/tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

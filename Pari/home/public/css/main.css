@@ -1,0 +1,814 @@
+@charset "utf-8";
+
+/*@import url("bootstrap.min.css");*/
+
+@charset "utf-8";
+
+html{ border: 0;width:100%;}
+body{
+    font-family:"微软雅黑";
+    margin:0; padding:0;font-size:12px;
+    word-wrap:break-word;color:#333;
+    position:relative; z-index:0;
+    width:100%;
+}
+
+ul,li,dl,dt,dd,ol{ padding:0px; margin:0px; list-style-type:none;}
+p,input,form{ margin:0px; padding:0px;}
+h1,h2,h3,h4,h5,h6,u,i,em{ margin:0px; padding:0px; font-weight:normal; font-size:12px;font-style: normal;}
+img{border:0;vertical-align: middle;}
+a{ text-decoration:none; color:#333;}
+a:hover{ text-decoration:underline; color:#C81D15;}
+.clear{ clear:both; height:0; line-height:0; font-size:0; }
+
+/* HTML5 display-role reset for older browsers */
+
+blockquote, q {    quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none;}
+table { border-collapse: collapse; border-spacing: 0;}
+a,button,input,div{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    text-decoration: none;
+    margin: 0; padding: 0;
+
+
+}
+a:hover,a:focus,a:active,a:link{ text-decoration: none;}
+*{ box-sizing:border-box;}
+*{ -ms-box-sizing: border-box;}
+
+
+.page{
+    text-align: center;height: 24px; overflow: hidden;;
+    padding: 35px 0 48px;
+}
+.page a{
+    display: inline-block;; line-height: 20px; padding:2px 12px;
+    font-size: 12px;
+    margin: 0 1px;
+}
+.page a:hover,.page a.cur{
+    text-decoration: none;
+}
+
+.cm-icon{
+    display: inline-block;;
+    width: 25px;height: 25px; text-align: center;
+    line-height: 25px;
+}
+
+em,i{ font-style: normal;}
+
+input[type="text"],input[type="password"],textarea{
+    outline:0 none;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    border:0;
+    border: 1px solid #fff;
+    border-radius:0px;
+    padding:1% 0 1% 5px;
+    vertical-align: middle;;
+}
+input::-webkit-input-placeholder{ /* WebKit browsers */
+    color:#999;
+    font-size: 14px; font-weight: normal;;
+}
+select{
+    outline:0 none;
+    background: none;
+    padding:2px 5px;
+    margin: 4px 0 0 0;
+    border:0;
+    border:1px solid #ccc;
+    vertical-align: middle;;
+}
+
+
+button,button:active,button:focus{ font-size: 1em;outline: none;
+    line-height: 22px;box-shadow: none; border: 0;
+}
+
+.ads-contuiter{ width: 100%; clear: both;margin: 0 auto; overflow: hidden; position: relative;z-index: 1;}
+.ads-row{ width: 100%; clear: both; display: table;}
+
+
+.ads-c-0,.ads-c-1,.ads-c-2,.ads-c-3,.ads-c-4,.ads-c-5,.ads-c-6,.ads-c-7,.ads-c-8,.ads-c-9,.ads-c-10,.ads-c-11,.ads-c-12,.ads-mg-7{ float: left;}
+.ads-c-0{ width: 0;}
+.ads-c-1{width: 8.33333333%}
+.ads-c-2{width: 16.66666667%}
+.ads-c-3{width: 25%}
+.ads-c-4{width: 33.33333333%}
+.ads-c-5{width: 41.66666667%}
+.ads-c-6{ width: 50%}
+.ads-c-7{width: 58.33333333%}
+.ads-c-8{width: 66.66666667%}
+.ads-c-9{ width: 75%}
+.ads-c-10{width: 83.33333333%}
+.ads-c-11{width: 91.66666667%}
+.ads-c-12{ width: 100%;}
+.ads-mg-7{ width: 14.28571428%}
+
+.fl{ float: left}
+.fr{ float: right}
+.clear{clear: both;height: 0;line-height: 0; overflow: hidden;}
+/*-----------------layout------------*/
+
+.btn-control{ margin-top: 8%; text-align: center;}
+.btn,.btn:hover{ display: inline-block;
+    /*background:linear-gradient(to bottom,#f13636, #cd1717);
+    background: -webkit-linear-gradient(top,#f13636, #cd1717);*/
+    border: 1px solid #2f143f;
+    text-shadow:0px 1px 1px rgba(0, 0, 0, 0.75) inset;
+    color: #fff;
+    border-radius: 0.25em;
+    line-height: 20px; padding:7px 36px;
+    vertical-align: middle;
+    background: #2f143f;
+    /*font-weight: bold;;*/
+    font-size: 14px;
+    text-align: center;
+}
+body .btn:focus,body  .btn:active,body .btn:link,body a.btn:link,body a.btn:active,body a.btn:focus{
+    color: #fff;
+}
+
+
+.inpput-group{ width: 100%; clear: both;
+    border-collapse: separate;
+    display: table;
+    position: relative;
+}
+
+.inpput-group .input-addon {
+    display: table-cell;
+    background-color: #f0f2f5;
+    border: 1px solid #cfd1d4;
+    border-radius: 4px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%;
+
+}
+.inpput-group label{ display: table-cell; vertical-align: middle; min-width: 80px; width: 20%; text-align: right;}
+.inpput-group .input-addon:first-child{ border-right: 0; border-radius: 4px 0 0 4px;}
+.inpput-group .input-addon:last-child{ border-left: 0;border-radius: 0 4px 4px 0;}
+
+.form-control{
+    float: left;
+    display: table-cell;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    border: 1px solid #cfd1d4;
+    /*border-radius:0 4px 4px 0;*/
+    /*box-shadow:0px 1px 1px rgba(0, 0, 0, 0.075) inset;*/
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    height:30px;
+    line-height: 1.42857;
+    /* padding: 6px 12px;*/
+    /* border-left: 0;*/
+    transition: border-color 0.35s ease-in-out 0s, box-shadow 0.35s ease-in-out 0s;
+}
+.form-control:focus{
+    box-shadow:none;
+    /*box-shadow:0px 1px 1px rgba(50, 16, 19, 0.075) inset, 0 0 8px rgba(50, 16, 19, 0.6);*/
+    /* border-color: #321045;*/
+    border: 1px solid #cfd1d4;
+}
+
+/*-----------TODO----------------------member----------------start----------------------------------*/
+#header{
+    position: fixed; width: 100%; z-index: 900; padding:0px 0;
+}
+#header.inner-main-header{
+    position: relative;
+}
+.h-login-banner{
+    width: 100%; height: 100%; position: absolute;; z-index: 10; left: 0;top: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.login-contruter{
+    position: absolute;
+    z-index: 1000; left: 0;top: 0; width: 100%; height: 100%;
+
+}
+
+.table{
+    display: table; width: 100%; vertical-align: middle; height: 100%;
+}
+.td{
+    display: table-cell; width: 100%; vertical-align: middle;
+}
+
+#header .comemt-toTips{
+    position: absolute;; right: 0; top: 0;
+}
+#header .comemt-toTips a{
+    display: inline-block;; line-height: 22px; padding: 2px 12px;
+    position: relative;
+}
+
+.login-contruter .input-box{
+    width: 290px; margin: 0 auto;
+}
+
+.login-contruter .input-box .inpput-group{
+    margin-top: 10px;
+}
+
+.input-box .t_menu{
+    width: 100%; position: relative; z-index: 2;
+}
+
+.login-contruter .i-box .e-i{
+    display: none;;
+}
+.login-contruter .i-box .e-i:first-child{
+    display: table;;
+}
+
+.input-box .t_menu .li.ads-c-4 a{
+    border-radius: 4px 0 0 0;
+}
+
+.input-box .t_menu .li.ads-c-8 a{
+    border-radius: 0 4px 0 0;
+}
+
+
+.input-box .t_menu a{
+    display:block;width: 100%; height: 100%; text-align: center; padding:10px 0;
+}
+
+.input-box .i-box{
+    width: 100%; position: relative; z-index: 1; margin-top: -1px; padding: 5px 20px 20px; font-size: 12px;
+}
+
+.login-contruter .btn-control{
+    text-align: left; margin-top: 0;
+}
+
+.login-contruter .btn-control .btn{
+    font-size: 12px; padding:5px 35px;
+}
+.blur{
+
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+.fixed{ position: fixed;}
+
+.logo p{
+    margin: 5px 0; font-size: 14px;
+}
+.logo img{ vertical-align: middle;}
+
+
+.menu-maneger ul li{
+    float: left;display: inline-block;; width: 130px; text-align: center;
+}
+.menu-maneger ul li a{
+    display:inline-block;; width: 100%;
+    height: 38px; line-height: 38px; color: #fff;
+    font-size: 14px;
+}
+
+
+#arcle{
+    position: fixed;height: 100%;width: 100%;
+    left: 0;top: 0;z-index: 299;
+}
+
+
+#main{
+    margin: 15px auto;
+}
+
+#main .adv-ac-main,#main .adv-ac-main img{
+    width: 100%;
+}
+#main .adv-ac-main{
+    margin-bottom: 15px;
+}
+
+#main .nav-stock{
+    width: 220px; overflow: hidden;
+}
+#main .nav-stock h1{
+    height: 36px; line-height: 36px;
+    padding-left: 10px;font-size: 16px;
+}
+#main .nav-stock h2{
+    height: 32px; line-height: 32px;
+    padding-left: 10px;font-size: 14px;
+}
+#main .nav-stock ul{width: 100%; overflow: hidden;padding-bottom: 15px;}
+#main .nav-stock ul li{
+    line-height: 26px;
+    overflow: hidden;;
+    padding:10px 10px 0;
+}
+#main .nav-stock ul li a{
+    display:block;;
+    width: 100%;
+    height: 26px; line-height: 26px;
+    padding-left: 10px;
+}
+
+#main .container-main{
+    width: 770px; overflow: hidden;;
+}
+#main .container-main .home-main{
+    padding:0 25px 15px;display: block;;
+}
+.tool-title-main{
+    position: relative;
+    line-height: 32px; padding-top: 15px;
+    overflow: hidden;;
+    font-size: 14px;
+}
+.tool-title-main a{
+    font-size: 14px;
+}
+
+.tool-title-main .more{
+    position: absolute; right: 0;top:15px;
+    line-height: 32px;
+}
+.tool-title-main .more a{
+    color: #666;
+}
+#main .user-info{
+    padding: 15px 0;
+}
+
+#main .user-info .pic{
+    width: 100px; height: 100px; overflow: hidden;;
+    background: #cecece;margin-right: 15px;
+}
+
+#main .user-info .in-info{
+    width: 160px;font-size: 12px;
+}
+#main .user-info .in-info p{
+    line-height: 22px;
+}
+#main .user-info .in-info p b{font-size: 16px;}
+#main .user-info .in-info p a{ display: inline-block; padding: 0 12px;}
+#main .user-info .in-info p.btn-style{
+    margin-top: 5px;
+}
+#main .user-info .orther p{
+    line-height: 22px;
+    margin-top: 4px;
+}
+
+.tool-list-pic1{
+    padding: 15px 35px; position: relative;;
+    width: 100%; overflow: hidden;;
+
+}
+.tool-list-pic1 .pic{
+    width: 840px; position: relative;; overflow: hidden;;
+}
+.tool-list-pic1 ul{
+    height: 100px; overflow: hidden;;
+
+}
+.tool-list-pic1 ul li{
+    float: left;width: 160px; height: 100px; overflow: hidden;;
+    margin-right: 10px;
+}
+.tool-list-pic1 .btn-control{
+    position: absolute;top: 48px; margin-top: 0;z-index: 9;
+}
+.tool-list-pic1 .btn-control.left{
+    left: 0;
+}
+
+.tool-list-pic1 .btn-control.right{
+    right: 0;
+}
+
+.findedPassword{
+    width: 380px; margin:128px auto 448px;
+}
+
+.fixBox label{float: left;
+    line-height: 30px;text-align: right;
+    font-size: 14px;
+}
+.fixBox{
+    margin-top: 12px;
+}
+.fixBox .inpput-group{
+    float: left;;
+}
+.findedPassword .fixBox label{
+    width: 160px;
+}
+.findedPassword .fixBox .inpput-group{
+    width: 220px;clear: none;
+}
+.findedPassword .fixBox .inpput-group .text{
+    width: 100%; line-height: 30px; display: inline-block;;
+}
+.findedPassword .fixBox .inpput-group input{
+
+}
+
+.findedPassword .fixBox .btn{
+    width: 104px;text-align: center;
+}
+.findedPassword .sucess{
+    padding: 78px 0 52px 38px;
+}
+.findedPassword .sucess h5{
+    font-size: 18px; font-weight: normal;;
+}
+
+.findedPassword .sucess p{
+    margin-top: 12px;color: #999;
+}
+
+.updata-password{
+    width:380px; margin:48px auto 0;
+}
+.updata-password .fixBox{
+    margin-top: 15px;
+}
+.updata-password .fixBox label{
+    width: 120px;
+}
+.updata-password .fixBox .inpput-group{
+    width: 220px;clear: none;
+}
+
+.updata-password .fixBox .btn{
+    width: 104px;text-align: center;
+}
+
+.fixBox .inpput-group .text{
+    line-height: 30px;
+}
+.fixBox .inpput-group label{
+    width: 100%!important;float: none;;
+}
+.creat-g-v{
+    width:780px; margin:48px auto 0;
+}
+
+.creat-g-v .fixBox label{
+    width: 140px;
+}
+.creat-g-v .fixBox .inpput-group{
+    width: 600px;clear: none;;
+}
+.creat-g-v .fixBox .inpput-group input{
+    width: auto;
+}
+.creat-g-v .fixBox .inpput-group select{
+    width: 220px;
+}
+.creat-g-v .fixBox .inpput-group b{
+    font-size: 14px;
+}
+
+.my_g_list{
+    width: 100%; overflow: hidden;;
+    margin: 15px auto 0;
+}
+.my_g_list table{
+    width: 100%;
+}
+
+
+.container-main table{
+    font-size: 14px;text-align: center;
+}
+.container-main .text-left table{
+    text-align: left;
+}
+.container-main table tr th{
+    line-height: 30px;
+}
+
+.container-main table tr td{
+    padding: 5px 0;
+    line-height: 22px;
+}
+.container-main .text-left table td{
+    padding: 15px 0 15px 15px;
+}
+
+.tool-tips-comment{
+    line-height: 22px; padding: 15px 0 15px 15px;
+    height: 22px;
+    margin: 15px auto 0;
+}
+
+.g_main .o-list{
+    width: 790px;
+}
+.g_main .o-list .g-o-box{
+    padding: 0px 15px 15px;margin-bottom: 15px;
+}
+
+.or-select .fixBox label{
+    float: left;;width: 110px; text-align: right;padding-right: 10px;
+    font-size: 12px;
+}
+.or-select .fixBox .u-o-item{
+    float: left;
+    width: 630px;
+    line-height: 30px;
+}
+.or-select .fixBox .u-o-item ul li{
+    float: left;display: inline-block;
+    overflow: hidden;
+    height: 30px;padding: 5px 2px 5px 0;
+}
+.or-select .fixBox .u-o-item ul li a{display: block;padding: 0 12px;line-height: 20px;height: 20px; overflow: hidden;}
+
+
+.tool-tab-select{
+    height: 42px;line-height: 42px; overflow: hidden;;
+    margin-bottom: 15px;
+}
+.tool-tab-select ul li{
+    float: left;display: inline-block;
+}
+.tool-tab-select ul li a{
+    display: block;;height: 42px;line-height: 42px; text-align: center;
+    padding: 0 25px;font-size: 14px;
+}
+
+
+.g-adv-main{
+    width: 200px;
+}
+.g-adv-main .g-adv-box{
+    margin-bottom: 15px;
+}
+.g-adv-main .item-g-intro{
+    padding: 5px 5px 0;
+}
+.g-adv-main .item-g-intro .item{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+.g-adv-main .item-g-intro .item .pic{
+    width: 188px; overflow: hidden;;
+}
+
+.g-adv-main .item-g-intro .item .name{
+    width: 188px;
+    line-height: 22px;height: 20px;overflow: hidden;
+    margin-top: 5px;
+    text-indent: 10px;
+}
+.g-adv-main .item-g-intro .item .text{
+    width: 188px;
+    line-height: 22px;height: 20px;overflow: hidden;
+    margin-top:5px;
+    text-indent: 10px;
+}
+
+
+.g-o-listbox .g-i-each{
+    padding: 15px;
+}
+
+.g-o-listbox .g-i-each .pic{
+    width: 120px; height: 120px; overflow: hidden;;
+}
+.g-o-listbox .g-i-each .info{
+    width: 480px;overflow: hidden;;
+    margin-left: 15px;
+}
+
+.g-o-listbox .g-i-each .info .title{
+    line-height: 30px;line-height: 30px; overflow: hidden;;
+}
+.g-o-listbox .g-i-each .info .title a{
+    line-height: 30px;line-height: 30px; overflow: hidden;;
+    font-size: 14px;
+}
+.g-o-listbox .g-i-each .info .o-add-sc{
+    padding: 10px 0;
+}
+.g-o-listbox .g-i-each .info p{
+    margin-top: 3px; color: #999;
+}
+
+
+.g-o-listbox .g-i-each .o-more-do{
+    width: 130px;overflow: hidden;;
+    margin-left: 15px;
+}
+.tool-s-btn{
+    margin-top: 15px;
+}
+
+
+/*--game center-*/
+
+
+.GameCenter #header .logo img{
+    height:28px;
+}
+
+.GameCenter #header .oh-more-tool{
+    position: absolute;; right: 0; top: 0;height: 100%;
+    width: 50%; overflow: hidden;;text-align: right;
+    border-right: 1px solid #ccc;
+}
+.GameCenter #header .oh-more-tool a{
+    display: inline-block;; padding: 0 12px;line-height: 38px;
+    margin-right: -1px;border-left: 1px solid #ccc;
+}
+
+.GameCenter #main .mod-a{
+    width: 200px;
+}
+.GameCenter #main .mod-c{
+    width: 750px; margin-left: 15px;
+}
+.GameCenter #main .mod-d{
+    width: 220px;
+}
+
+.mod-a .nav-menu{
+    border: 1px solid #ccc;display: block;;
+    height: 280px;overflow-x: hidden;overflow-y: auto;
+}
+
+.mod-a .nav-menu h2{
+    position: relative;; line-height: 30px;text-indent: 15px;
+    border-bottom: 1px solid #ccc;background: #f1f1f1;
+}
+.mod-a .nav-menu ul{
+    padding-left: 35px;border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+.mod-a .nav-menu ul li{
+    line-height:28px;height: 28px; overflow: hidden;;
+}
+.mod-a .nav-menu ul li a{
+    display: inline-block;width: 100%;height: 28px;
+    color: #666;
+}
+.mod-a .nav-menu ul li a:hover{
+    background: #f3f3f3;color: #333;
+}
+
+.mod-a .nav-menu h2 .slide-btn{
+    position: absolute;; right: 4px;top: 4px;display: block;;
+    height: 22px;width: 22px;background: #f7f7f7;
+    border: 1px solid #dcdcdc;text-align: center;line-height: 22px;
+    overflow: hidden;;font-size: 16px;text-indent: 0;
+}
+
+.default-pic-color{
+    background: #eee;
+}
+
+
+.mod-a .a-banner{
+    margin-top: 10px;
+    overflow: hidden;;border: 1px solid #dcdcdc;
+}
+.mod-c .adv{
+    width: 100%; height: 280px; overflow: hidden;;border: 1px solid #dcdcdc;
+
+}
+
+.mod-d .d-banner-v{
+    width: 100%; height: 280px; overflow: hidden;;border: 1px solid #dcdcdc;
+}
+
+.mod-d .d-banner{
+    margin-top: 10px;
+    overflow: hidden;;border: 1px solid #dcdcdc;
+}
+.mod-c .c-i-row{
+    margin-top: 10px;
+    overflow: hidden;;border: 1px solid #dcdcdc;
+    padding: 0 15px;
+}
+
+.mod-c .c-i-row .pus-list{
+    padding: 15px 0;
+}
+
+.mod-c .c-i-row .pus-list li{
+    float: left; display: inline-block;; width: 20%;
+    padding: 0 5px;
+}
+
+.mod-c .c-i-row .pus-list li .pic{
+    border: 1px solid #ccc;width: 100%; height: 160px;
+}
+.mod-c .c-i-row .pus-list li .pic img{width: 100%;}
+
+.mod-c .c-i-row .pus-list li .name{
+    padding-top: 5px;line-height: 30px;height: 30px; overflow: hidden;;
+    font-size: 14px;
+}
+.mod-c .c-i-row .pus-list li .info{
+    line-height: 24px;height: 24px; overflow: hidden;;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    z-index: 300; left: 0; bottom: 0; width: 100%; padding: 15px 0;
+}
+#footer .logo{ float: left; margin-right: 10px;}
+#footer .info{ float: left; }
+#footer h5{ font-size: 12px;color: #717171;}
+#footer p{ font-size: 12px; color: #999;}
+
+.set-width-tool{
+    margin: 0 auto; display: table;; position: relative;
+    width: 1000px;
+}
+
+@media screen and (min-width:1200px){
+    body .set-width-tool{
+        width: 1200px;
+    }
+
+    #main .container-main{
+        width: 970px; overflow: hidden;
+    }
+    .g_main .o-list{
+        width: 990px;
+    }
+    .or-select .fixBox .u-o-item{
+        width: 830px;
+    }
+}
+
+
+
+
+
+
+
+
